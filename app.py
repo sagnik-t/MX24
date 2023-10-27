@@ -28,7 +28,7 @@ similarity = pk.load(open('similarity.pkl', 'rb'))
 st.title("Movie Recommender System")
 
 selected_movie_name = st.selectbox(
-    'How would you like to be contacted?',
+    'Select a movie',
     movies['title'].values)
 
 import streamlit as st
