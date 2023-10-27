@@ -31,10 +31,6 @@ selected_movie_name = st.selectbox(
     'Select a movie',
     movies['title'].values)
 
-import streamlit as st
-
-# Assuming you have your data in 'names' and 'posters' lists
-
 if st.button('Recommend'):
     names, posters = recommend(selected_movie_name)
     
